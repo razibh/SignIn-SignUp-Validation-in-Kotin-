@@ -26,7 +26,7 @@
             android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:imeOptions="actionDone"
-            android:background="@drawable/emaillayout"
+            android:background="@drawable/customlayout"
             android:id="@+id/etFN"
             android:hint="Frist Name"/>
         <EditText
@@ -35,7 +35,7 @@
             android:id="@+id/etLN"
             android:imeOptions="actionDone"
             android:layout_weight="1"
-            android:background="@drawable/emaillayout"
+            android:background="@drawable/customlayout"
             android:layout_marginLeft="8dp"
             android:hint="Last Name"/>
     </LinearLayout>
@@ -47,7 +47,7 @@
         android:layout_height="48dp"
         android:inputType="textEmailAddress"
         android:hint="Email or Mobile Number"
-        android:background="@drawable/emaillayout"
+        android:background="@drawable/customlayout"
         android:id="@+id/EtEmail"
         android:layout_marginBottom="24dp"
         />
@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:id="@+id/EtpassNew"
             android:textAllCaps="true"
-            android:background="@drawable/emaillayout"
+            android:background="@drawable/customlayout"
             android:inputType="textPassword"
             android:imeOptions="actionNext"
             android:hint="Password"
@@ -75,7 +75,7 @@
             android:inputType="textPassword"
             android:imeOptions="actionDone"
             android:hint="Re-Password"
-            android:background="@drawable/emaillayout"
+            android:background="@drawable/customlayout"
             android:layout_weight="1"
             android:layout_marginLeft="8dp"
             />
@@ -93,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/emaillayout"
+        android:background="@drawable/customlayout"
         android:id="@+id/radioGroup">
 
         <RadioButton
