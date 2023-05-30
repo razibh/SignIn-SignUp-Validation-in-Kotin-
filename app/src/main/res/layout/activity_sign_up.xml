@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Create a new account"
+    android:textStyle="bold"
+    android:textSize="24dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+            android:background="@drawable/emaillayout"
+            android:id="@+id/etFN"
+            android:hint="Frist Name"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/etLN"
+            android:imeOptions="actionDone"
+            android:layout_weight="1"
+            android:background="@drawable/emaillayout"
+            android:layout_marginLeft="8dp"
+            android:hint="Last Name"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email or Mobile Number"
+        android:background="@drawable/emaillayout"
+        android:id="@+id/EtEmail"
+        android:layout_marginBottom="24dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:id="@+id/EtpassNew"
+            android:textAllCaps="true"
+            android:background="@drawable/emaillayout"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:hint="Password"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:hint="Re-Password"
+            android:background="@drawable/emaillayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Gender"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/emaillayout"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Male"
+            android:checked="false"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Female"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:textSize="16dp" />
+        <RadioButton
+            android:id="@+id/radiocustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Custom"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:textSize="16dp" />
+    </RadioGroup>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time."/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:layout_gravity="center"
+        android:id="@+id/btnsingup"
+        android:padding="8dp"/>
+</LinearLayout>

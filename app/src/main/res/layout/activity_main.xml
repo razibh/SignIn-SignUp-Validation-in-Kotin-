@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EtEmail"
+        android:drawableLeft="@drawable/emailicon"
+        android:background="@drawable/emaillayout"
+        android:drawablePadding="8dp"
+        android:textAllCaps="true"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:hint="Email or Mobile Number"
+        android:layout_marginBottom="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:drawableLeft="@drawable/passwordicon"
+        android:drawablePadding="8dp"
+        android:textAllCaps="true"
+        android:inputType="textPassword"
+        android:background="@drawable/emaillayout"
+        android:imeOptions="actionDone"
+        android:hint="Enter your Password"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:text="Forget Password"
+            android:textColor="#0AB2F1"
+            android:id="@+id/forgtpw"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignIn"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/btn"
+            android:textSize="24dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Don't have an account?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/singup"
+                android:textSize="24sp"
+                android:textColor="#F44336"/>
+        </LinearLayout>
+
+
+</LinearLayout>
