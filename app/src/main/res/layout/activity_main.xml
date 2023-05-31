@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pass"
+        android:drawableRight="@drawable/passeye"
         android:drawableLeft="@drawable/passcustomicon"
         android:drawablePadding="8dp"
         android:textAllCaps="true"
@@ -63,7 +64,7 @@
             android:layout_height="wrap_content"
             android:text="SignIn"
             android:layout_marginEnd="20dp"
-            android:id="@+id/btn"
+            android:id="@+id/btnsign"
             android:textSize="24dp"
             android:textAllCaps="false"
             android:layout_marginBottom="20dp"/>
